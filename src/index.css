@@ -1,5 +1,5 @@
 :root {
-  --color-bg: beige;
+  --color-bg: #e9dbe6;;
   --color-dark-gray: rgb(77, 77, 77);
   --color-light-gray: rgb(121, 121, 121);
   --color-gray: rgb(194, 194, 194);
@@ -65,8 +65,30 @@ address {
 }
 
 .pageTitle {
-  margin: 40px 0 40px 0;
+  margin: 30px 0;
   font-weight: 600;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+    color: #ffedff;
+      text-shadow: 0 0 5px #000df3, 0 0 10px #ff0000, 0 0 15px #ff0086, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+      animation: neon-pink 1.5s ease-in-out infinite alternate;
+
+  /* Анимация мерцания */
+  animation: neon-pink 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-pink {
+  0% {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff,
+      0 0 15px #ff00ff, 0 0 20px #ff00ff,
+      0 0 25px #ff00ff, 0 0 30px #ff00ff,
+      0 0 35px #ff00ff;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff,
+      0 0 30px #ff00ff, 0 0 40px #ff00ff,
+      0 0 50px #ff00ff, 0 0 60px #ff00ff,
+      0 0 70px #ff00ff;
+  }
 }
